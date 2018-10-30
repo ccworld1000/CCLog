@@ -1,5 +1,5 @@
 #
-#  ccprint.error.p6
+#  CCLog_error.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,16 +23,14 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
-use CCLog;
+use CCLogFull;
 
-say "Begin test CCLog/test/ccprint.error.p6";
 
-my Str $msg;
-if not ccprint $msg {
+if not CCLog_error  "--->[Ignore this information] CCLog_error test string" {
    say "==>some error, please check it!;"
 } else {
-  say "ccprint [NO arg] test OK!";
+  say "CCLog_error [right arg] test OK!";
 }
 

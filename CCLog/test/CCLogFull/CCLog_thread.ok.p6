@@ -1,5 +1,5 @@
 #
-#  ccerror.error.p6
+#  CCLog_thread.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,16 +23,14 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
-use CCLog;
+use CCLogFull;
 
-say "Begin test CCLog/test/ccerror.error.p6";
 
-my Str $msg;
-if not ccerror $msg {
+if not CCLog_thread  "--->[Ignore this information] CCLog_thread test string" {
    say "==>some error, please check it!;"
 } else {
-  say "ccerror [NO arg] test OK!";
+  say "CCLog_thread [right arg] test OK!";
 }
 

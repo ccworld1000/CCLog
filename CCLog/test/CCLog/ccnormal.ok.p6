@@ -1,5 +1,5 @@
 #
-#  ccerror.ok.p6
+#  ccnormal.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,15 +23,14 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
 use CCLog;
 
-say "Begin test CCLog/test/ccerror.ok.p6";
 
-if not ccerror  "--->[Ignore this information] ccerror test string" {
+if not ccnormal  "--->[Ignore this information] ccnormal test string" {
    say "==>some error, please check it!;"
 } else {
-  say "ccerror [right arg] test OK!";
+  say "ccnormal [right arg] test OK!";
 }
 

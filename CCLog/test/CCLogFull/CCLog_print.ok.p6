@@ -1,5 +1,5 @@
 #
-#  ccwarning.ok.p6
+#  CCLog_print.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,15 +23,14 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
-use CCLog;
+use CCLogFull;
 
-say "Begin test CCLog/test/ccwarning.ok.p6";
 
-if not ccwarning  "--->[Ignore this information] ccwarning test string" {
+if not CCLog_print  "--->[Ignore this information] CCLog_print test string" {
    say "==>some error, please check it!;"
 } else {
-  say "ccwarning [right arg] test OK!";
+  say "CCLog_print [right arg] test OK!";
 }
 

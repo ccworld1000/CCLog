@@ -1,5 +1,5 @@
 #
-#  ccthread.ok.p6
+#  CCLog_loop.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,15 +23,14 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
-use CCLog;
+use CCLogFull;
 
-say "Begin test CCLog/test/ccthread.ok.p6";
 
-if not ccthread  "--->[Ignore this information] ccthread test string" {
+if not CCLog_loop  "--->[Ignore this information] CCLog_loop test string" {
    say "==>some error, please check it!;"
 } else {
-  say "ccthread [right arg] test OK!";
+  say "CCLog_loop [right arg] test OK!";
 }
 

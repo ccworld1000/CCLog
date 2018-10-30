@@ -1,5 +1,5 @@
 #
-#  ccwarning.error.p6
+#  ccdie.error.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,16 +23,15 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
 use CCLog;
 
-say "Begin test CCLog/test/ccwarning.error.p6";
 
 my Str $msg;
-if not ccwarning $msg {
+if not ccdie $msg {
    say "==>some error, please check it!;"
 } else {
-  say "ccwarning [NO arg] test OK!";
+  say "ccdie [NO arg] test OK!";
 }
 

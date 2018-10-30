@@ -1,5 +1,5 @@
 #
-#  ccloop.error.p6
+#  ccloop.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,16 +23,14 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
 use CCLog;
 
-say "Begin test CCLog/test/ccloop.error.p6";
 
-my Str $msg;
-if not ccloop $msg {
+if not ccloop  "--->[Ignore this information] ccloop test string" {
    say "==>some error, please check it!;"
 } else {
-  say "ccloop [NO arg] test OK!";
+  say "ccloop [right arg] test OK!";
 }
 

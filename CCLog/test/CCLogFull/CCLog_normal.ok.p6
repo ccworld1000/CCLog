@@ -1,5 +1,5 @@
 #
-#  ccsay.ok.p6
+#  CCLog_normal.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,15 +23,14 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
-use CCLog;
+use CCLogFull;
 
-say "Begin test CCLog/test/ccsay.ok.p6";
 
-if not ccsay  "--->[Ignore this information] ccsay test string" {
+if not CCLog_normal  "--->[Ignore this information] CCLog_normal test string" {
    say "==>some error, please check it!;"
 } else {
-  say "ccsay [right arg] test OK!";
+  say "CCLog_normal [right arg] test OK!";
 }
 

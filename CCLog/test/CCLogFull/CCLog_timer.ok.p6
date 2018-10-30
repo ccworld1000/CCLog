@@ -1,5 +1,5 @@
 #
-#  ccnormal.error.p6
+#  CCLog_timer.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,16 +23,14 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
-use CCLog;
+use CCLogFull;
 
-say "Begin test CCLog/test/ccnormal.error.p6";
 
-my Str $msg;
-if not ccnormal $msg {
+if not CCLog_timer  "--->[Ignore this information] CCLog_timer test string" {
    say "==>some error, please check it!;"
 } else {
-  say "ccnormal [NO arg] test OK!";
+  say "CCLog_timer [right arg] test OK!";
 }
 

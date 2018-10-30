@@ -1,5 +1,5 @@
 #
-#  cctimer.error.p6
+#  CCLog_warning.error.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -23,16 +23,15 @@
 #
 #
     
+use lib "../../lib";
 
-use lib "../lib";
-use CCLog;
+use CCLogFull;
 
-say "Begin test CCLog/test/cctimer.error.p6";
 
 my Str $msg;
-if not cctimer $msg {
+if not CCLog_warning $msg {
    say "==>some error, please check it!;"
 } else {
-  say "cctimer [NO arg] test OK!";
+  say "CCLog_warning [NO arg] test OK!";
 }
 
