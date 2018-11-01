@@ -25,14 +25,14 @@
 
 unit class Build;
 
-method build($workdir) {
+method build($dir) {
 
     if $*DISTRO.is-win {
         die "not support or maybe later";
         return -1;
     }
 
-    "$workdir/resources".IO.mkdir;
+    "$dir/resources".IO.mkdir;
 
     shell "sh install.sh";
 }

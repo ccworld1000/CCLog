@@ -1,5 +1,6 @@
+#!/usr/bin/env perl6
 #
-#  CCLog.h
+#  CCLogFull.check.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -21,3 +22,7 @@
 #  MA 02110-1301, USA.
 #
 #
+    
+use CCLogFull;
+
+CCLog_loop "What do you see?";

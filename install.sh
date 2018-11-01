@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 #
 #  install.sh
 #
@@ -30,6 +31,10 @@ if [ -d CCLog/resources ] && [ -d resources ]; then
     echo "Copying resources";
     cp CCLog/resources/*.so resources;
     cp CCLog/resources/*.dylib resources;
+    if [ -f "CCLog/bin/ccsay" ];then
+      echo "copy shell bin to /usr/local/bin!"
+      cp CCLog/bin/cc* /usr/local/bin
+    fi
   else
     echo "No resource library files found";
     echo "Please download the latest version from https://github.com/ccworld1000/CCLog"

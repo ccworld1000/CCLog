@@ -1,5 +1,5 @@
 #
-#  CCLog.c
+#  ccnetwork.ok.p6
 #
 #  Created by CC on 2018/10/12.
 #  Copyright 2018 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>
@@ -21,3 +21,15 @@
 #  MA 02110-1301, USA.
 #
 #
+    
+use lib "../../lib";
+
+use CCLog;
+
+
+if not ccnetwork  "--->[Ignore this information] ccnetwork test string" {
+   say "==>some error, please check it!;"
+} else {
+  say "ccnetwork [right arg] test OK!";
+}
+

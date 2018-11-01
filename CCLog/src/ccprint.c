@@ -21,17 +21,22 @@
 *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 *  MA 02110-1301, USA.
 *
-*
-*
 */
       
 
-#include "CCLog.h"
+#include <CCLog.h>
 
 int main(int argc, char const *argv[]) {
+  if (argc == 1) {
+    CCLog_warning ("Forget the input parameters?");
+    CCLog_warning ("Update or more information to access URL : https://github.com/ccworld1000/CCLog");
+    return -1;
+  }
+
   for (int i = 1; i < argc; i++) {
     char *arg = (char *)(*(argv + i));
     CCLog_print(arg);
   }
+
   return 0;
 }
