@@ -59,29 +59,29 @@ typedef enum {
     */
     CCLogColorTypeYellow = 33,
     /*
-      White color
+      Blue color
     */
-    CCLogColorTypeWhite = 37,
-    /*
-      Green color
-    */
-    CCLogColorTypeGreen = 32,
+    CCLogColorTypeBlue = 34,
     /*
       Purple color
     */
     CCLogColorTypePurple = 35,
     /*
+      SkyBlue color
+    */
+    CCLogColorTypeSkyBlue = 36,
+    /*
+      Green color
+    */
+    CCLogColorTypeGreen = 32,
+    /*
       Red color
     */
     CCLogColorTypeRed = 31,
     /*
-      Blue color
+      White color
     */
-    CCLogColorTypeBlue = 34,
-    /*
-      SkyBlue color
-    */
-    CCLogColorTypeSkyBlue = 36,
+    CCLogColorTypeWhite = 37,
 } CCLogColorType;
 
 /*
@@ -92,7 +92,12 @@ CC_EXPORT void CCLog_showColor (int isShowColor);
 /*
  CCLog_showLogTips
 */
-CC_EXPORT void CCLog_showColor (int isShowLogTips);
+CC_EXPORT void CCLog_showLogTips (int isShowLogTips);
+
+/*
+ CCLog_all_displayLog
+*/
+CC_EXPORT void CCLog_all_displayLog (int isDisplay);
 
 /*
  CCLog_normal_displayLog

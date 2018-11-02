@@ -1,4 +1,4 @@
-unit module CCLog:ver<0.0.2>:auth<youhua deng (deng you hua | CC) (ccworld1000@gmail.com, 2291108617@qq.com)>;
+unit module CCLog:ver<0.0.3>:auth<youhua deng (deng you hua | CC) (ccworld1000@gmail.com, 2291108617@qq.com)>;
 
 #!/usr/bin/env perl6
 #
@@ -51,12 +51,12 @@ our enum CCLogType is export
 our enum CCLogColorType is export
 (
 	CCLogColorTypeYellow => 33,
-	CCLogColorTypeWhite => 37,
-	CCLogColorTypeGreen => 32,
-	CCLogColorTypePurple => 35,
-	CCLogColorTypeRed => 31,
 	CCLogColorTypeBlue => 34,
+	CCLogColorTypePurple => 35,
 	CCLogColorTypeSkyBlue => 36,
+	CCLogColorTypeGreen => 32,
+	CCLogColorTypeRed => 31,
+	CCLogColorTypeWhite => 37,
 );
   
 
