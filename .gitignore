@@ -58,3 +58,5 @@ CCLog.podspec
 .DS_Store
 .precomp
 CCWriteLog.p6
+
+CCTar
